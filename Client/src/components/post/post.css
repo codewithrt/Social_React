@@ -1,0 +1,186 @@
+.post {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+  position: relative;
+}
+
+.postWrapper {
+  padding: 10px;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postUsername {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.postDate {
+  font-size: 12px;
+}
+
+.postCenter {
+  margin: 20px 0;
+}
+
+.postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.postLikeCounter {
+  font-size: 15px;
+}
+
+.postCommentText {
+  cursor: pointer;
+  border-bottom: 1px dashed gray;
+  font-size: 15px;
+}
+
+.postTopRight {
+  position: relative;
+}
+
+.postTopRight button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.postTopRight button:focus {
+  outline: none;
+}
+
+.postTopRight button:hover,
+.postTopRight button:focus {
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Change the top value */
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 1px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  width: 80px;
+}
+
+.dropdown-content button {
+  color: red;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+.dropdown-content button:hover {
+  background-color: #f9f9f9;
+}
+
+.postTopRight:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 767px) {
+  .postWrapper {
+    padding: 5px;
+  }
+
+  .postTopLeft {
+    align-items: flex-start;
+  }
+
+  .postProfileImg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .postUsername {
+    font-size: 14px;
+    margin: 0 8px;
+  }
+
+  .postDate {
+    font-size: 10px;
+  }
+
+  .postCenter {
+    margin: 10px 0;
+  }
+
+  .postImg {
+    margin-top: 10px;
+    max-height: 300px;
+  }
+
+  .postBottom {
+    margin-top: 5px;
+  }
+
+  .likeIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+
+  .postLikeCounter {
+    font-size: 12px;
+  }
+
+  .postCommentText {
+    font-size: 12px;
+  }
+
+  .dropdown-content {
+    top: 28px;
+  }
+}
